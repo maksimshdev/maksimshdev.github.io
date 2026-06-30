@@ -1,2 +1,2 @@
 # maksimshdev.github.io
-Coming soon!
+Coming soon :)
