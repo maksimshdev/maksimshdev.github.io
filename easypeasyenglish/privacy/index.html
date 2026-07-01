@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — Изи Пизи Инглиш</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --grad-1:#C9A8E0; --grad-2:#8FB8C9; --grad-3:#4FC0A8;
+    --card-bg:rgba(255,255,255,0.72);
+    --card-border:rgba(255,255,255,0.55);
+    --text:#2B2740; --muted:#5A5470; --accent:#7C6CE0; --link:#6A5ACD;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --grad-1:#3A2F52; --grad-2:#2A3A46; --grad-3:#1F3A33;
+      --card-bg:rgba(28,26,40,0.72);
+      --card-border:rgba(255,255,255,0.10);
+      --text:#ECE9F5; --muted:#A9A3BE; --accent:#9B8CF0; --link:#9B8CF0;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; padding:40px 18px;
+    font-family:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    color:var(--text); line-height:1.62; font-size:16px;
+    background:linear-gradient(135deg,var(--grad-1) 0%,var(--grad-2) 50%,var(--grad-3) 100%);
+    background-attachment:fixed;
+  }
+  .wrap{max-width:760px; margin:0 auto;}
+  .card{
+    background:var(--card-bg); border:1px solid var(--card-border);
+    border-radius:24px; padding:38px 34px; backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px); box-shadow:0 12px 40px rgba(43,39,64,0.14);
+  }
+  h1{font-weight:800; font-size:26px; line-height:1.25; margin:0 0 6px;}
+  h2{font-weight:700; font-size:18px; margin:30px 0 8px; color:var(--accent);}
+  .meta{color:var(--muted); font-size:14px; margin:0 0 4px;}
+  p{margin:10px 0;}
+  ul{margin:10px 0; padding-left:22px;}
+  li{margin:6px 0;}
+  a{color:var(--link); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .15s;}
+  a:hover{border-bottom-color:var(--link);}
+  strong{font-weight:600;}
+  .lead{font-size:16px; color:var(--text);}
+  hr{border:none; border-top:1px solid var(--card-border); margin:26px 0;}
+  .foot{color:var(--muted); font-size:13px; margin-top:24px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+
+<h1>Политика конфиденциальности</h1>
+<p class="meta">Приложение «Изи Пизи Инглиш»</p>
+<p class="meta">Последнее обновление: 30 июня 2026 г.</p>
+
+<p class="lead">Эта политика объясняет, какие данные обрабатывает приложение «Изи Пизи Инглиш» (далее — «приложение», «мы»), зачем и как вы можете ими управлять. Мы стараемся собирать только то, что нужно для работы приложения.</p>
+
+<h2>Коротко о главном</h2>
+<ul>
+  <li>Мы <strong>не показываем рекламу</strong>.</li>
+  <li>Мы <strong>не используем аналитику и сторонние трекеры</strong>.</li>
+  <li>Мы <strong>не продаём ваши данные</strong> и не передаём их третьим лицам в рекламных или маркетинговых целях.</li>
+  <li>Вы можете <strong>в любой момент удалить аккаунт и все данные</strong> — прямо в приложении или через веб-страницу.</li>
+</ul>
+
+<h2>Какие данные мы обрабатываем</h2>
+<p><strong>Данные аккаунта.</strong> Для входа вы регистрируетесь по электронной почте или через аккаунт Google. Мы обрабатываем ваш email; при входе через Google — также идентификатор Google-аккаунта, имя и фото профиля (если они предоставлены). Пароль при регистрации по email обрабатывается сервисом Firebase Authentication и нам в открытом виде недоступен.</p>
+<p><strong>Данные обучения.</strong> Прогресс по карточкам (состояние интервального повторения), избранные карточки и отметки о ваших согласиях. Эти данные хранятся локально на вашем устройстве и, при наличии аккаунта, синхронизируются с ним, чтобы прогресс не терялся.</p>
+<p><strong>Технические данные.</strong> При обращении к нашим серверным сервисам инфраструктура Google (Firebase) может обрабатывать IP-адрес, идентификаторы устройства и время обращений — это необходимо для работы и безопасности сервиса.</p>
+
+<h2>Зачем мы это делаем</h2>
+<ul>
+  <li>чтобы вы могли войти в аккаунт и пользоваться приложением;</li>
+  <li>чтобы сохранять и синхронизировать ваш прогресс обучения, включая офлайн-режим;</li>
+  <li>чтобы обеспечивать безопасность аккаунта и предотвращать злоупотребления.</li>
+</ul>
+
+<h2>Кому передаются данные</h2>
+<p>Для аутентификации, хранения и синхронизации данных мы используем сервисы <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore). Компания Google выступает обработчиком данных по нашему поручению. Данные могут обрабатываться на серверах Google в разных странах. Обработка Google регулируется его собственной политикой конфиденциальности: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+<p>Других получателей данных у нас нет. Рекламных и аналитических партнёров мы не используем.</p>
+
+<h2>Хранение и удаление данных</h2>
+<p>Мы храним данные вашего аккаунта и обучения, пока существует ваш аккаунт. Вы можете удалить аккаунт и связанные с ним данные:</p>
+<ul>
+  <li>в приложении: <strong>Настройки → Удалить аккаунт</strong>;</li>
+  <li>через веб-страницу <a href="https://maksimshdev.github.io/easypeasyenglish/delete-account/" target="_blank" rel="noopener">удаления аккаунта</a>.</li>
+</ul>
+<p>При удалении стираются данные аутентификации, данные в Cloud Firestore и локальные данные на устройстве. Удаление необратимо.</p>
+
+<h2>Ваши права</h2>
+<p>Вы вправе запросить доступ к своим данным, их исправление или удаление, а также отозвать согласие на обработку. Удалить данные можно самостоятельно (см. раздел выше). По остальным вопросам напишите нам — мы поможем.</p>
+
+<h2>Дети</h2>
+<p>Приложение не предназначено для детей младше 13 лет (или иного возраста, установленного законодательством вашей страны) и имеет возрастной рейтинг 12+. Мы сознательно не собираем данные детей. Если вы считаете, что ребёнок предоставил нам данные, напишите нам — мы их удалим.</p>
+
+<h2>Безопасность</h2>
+<p>Аутентификация и хранение данных выполняются через сервисы Firebase; передача данных защищается шифрованием. Тем не менее ни один способ передачи или хранения данных не является абсолютно безопасным, и мы не можем гарантировать абсолютную защиту.</p>
+
+<h2>Изменения политики</h2>
+<p>Мы можем обновлять эту политику. Актуальная версия всегда доступна по этому адресу, с указанием даты последнего обновления вверху страницы.</p>
+
+<h2>Контакты</h2>
+<p>Разработчик приложения и оператор данных — <strong>Maksim Shalotenko</strong>. По вопросам конфиденциальности и обработки данных пишите на <a href="mailto:easy.peasy.msh@gmail.com">easy.peasy.msh@gmail.com</a>.</p>
+
+<hr>
+<p class="foot">© 2026 Изи Пизи Инглиш · Maksim Shalotenko</p>
+
+</div>
+</div>
+</body>
+</html>
