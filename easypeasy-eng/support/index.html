@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Служба поддержки — Изи Пизи Инглиш</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --grad-1:#C9A8E0; --grad-2:#8FB8C9; --grad-3:#4FC0A8;
+    --card-bg:rgba(255,255,255,0.72);
+    --card-border:rgba(255,255,255,0.55);
+    --text:#2B2740; --muted:#5A5470; --accent:#7C6CE0; --link:#6A5ACD;
+    --row-bg:rgba(255,255,255,0.45);
+    --field-bg:rgba(255,255,255,0.60);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --grad-1:#3A2F52; --grad-2:#2A3A46; --grad-3:#1F3A33;
+      --card-bg:rgba(28,26,40,0.72);
+      --card-border:rgba(255,255,255,0.10);
+      --text:#ECE9F5; --muted:#A9A3BE; --accent:#9B8CF0; --link:#9B8CF0;
+      --row-bg:rgba(255,255,255,0.06);
+      --field-bg:rgba(255,255,255,0.08);
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; padding:40px 18px;
+    font-family:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    color:var(--text); line-height:1.62; font-size:16px;
+    background:linear-gradient(135deg,var(--grad-1) 0%,var(--grad-2) 50%,var(--grad-3) 100%);
+    background-attachment:fixed;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .wrap{max-width:620px; width:100%; margin:0 auto;}
+  .card{
+    background:var(--card-bg); border:1px solid var(--card-border);
+    border-radius:24px; padding:38px 34px; backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px); box-shadow:0 12px 40px rgba(43,39,64,0.14);
+  }
+  h1{font-weight:800; font-size:26px; line-height:1.25; margin:0 0 6px;}
+  .lead{font-size:16px; color:var(--muted); margin:0 0 24px;}
+  .mailrow{
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    background:var(--row-bg); border:1px solid var(--card-border);
+    border-radius:16px; padding:16px 20px; margin:0 0 18px;
+  }
+  .mailrow .label{font-size:13px; color:var(--muted); margin:0 0 2px;}
+  .mailrow .addr{font-weight:700; font-size:17px; color:var(--accent); word-break:break-all;}
+  .mailrow .addr a{color:inherit; text-decoration:none;}
+  .btn{
+    display:inline-block; border:none; cursor:pointer;
+    font-family:inherit; font-weight:700; font-size:16px;
+    color:#fff; background:var(--accent);
+    border-radius:14px; padding:14px 22px; text-decoration:none;
+    transition:transform .15s, opacity .15s; text-align:center;
+  }
+  .btn:hover{transform:translateY(-2px); opacity:.94;}
+  .btn-block{display:block; width:100%; margin:0 0 26px;}
+  .form-title{font-weight:700; font-size:17px; margin:2px 0 4px;}
+  .form-hint{font-size:13px; color:var(--muted); margin:0 0 14px;}
+  label{display:block; font-size:13px; color:var(--muted); margin:0 0 6px;}
+  input,textarea{
+    width:100%; font-family:inherit; font-size:15px; color:var(--text);
+    background:var(--field-bg); border:1px solid var(--card-border);
+    border-radius:12px; padding:12px 14px; margin:0 0 14px; resize:vertical;
+  }
+  input:focus,textarea:focus{outline:none; border-color:var(--accent);}
+  textarea{min-height:120px;}
+  .links{margin-top:26px; display:flex; gap:18px; flex-wrap:wrap;}
+  .links a{color:var(--link); text-decoration:none; font-size:14px;}
+  .links a:hover{text-decoration:underline;}
+  .foot{color:var(--muted); font-size:13px; margin-top:22px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<h1>Служба поддержки</h1>
+<p class="lead">По любым вопросам, проблемам и предложениям по приложению «Изи Пизи Инглиш» — напишите нам. Мы отвечаем на русском языке.</p>
+
+<div class="mailrow">
+  <div>
+    <p class="label">Почта поддержки</p>
+    <p class="addr"><a href="mailto:easy.peasy.msh@gmail.com">easy.peasy.msh@gmail.com</a></p>
+  </div>
+</div>
+
+<a class="btn btn-block" href="mailto:easy.peasy.msh@gmail.com?subject=%D0%98%D0%B7%D0%B8%20%D0%9F%D0%B8%D0%B7%D0%B8%20%D0%98%D0%BD%D0%B3%D0%BB%D0%B8%D1%88%20%E2%80%94%20%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D1%83">Написать письмо в Изи Пизи Инглиш</a>
+
+<p class="form-title">Или заполните форму</p>
+<p class="form-hint">Кнопка ниже откроет ваш почтовый клиент с уже заполненным письмом — останется только нажать «Отправить».</p>
+
+<label for="subj">Тема</label>
+<input id="subj" type="text" placeholder="Коротко о вопросе" value="Обращение в поддержку">
+
+<label for="msg">Сообщение</label>
+<textarea id="msg" placeholder="Опишите вопрос или проблему как можно подробнее"></textarea>
+
+<button class="btn btn-block" type="button" onclick="sendMail()">Отправить письмо</button>
+
+<div class="links">
+  <a href="../">На главную</a>
+  <a href="../terms/">Оферта</a>
+  <a href="../privacy/">Политика конфиденциальности</a>
+</div>
+
+<p class="foot">© 2026 · Изи Пизи Инглиш · Maksim Shalotenko</p>
+</div>
+</div>
+
+<script>
+  function sendMail(){
+    var to = 'easy.peasy.msh@gmail.com';
+    var s = document.getElementById('subj').value.trim() || 'Обращение в поддержку';
+    var b = document.getElementById('msg').value;
+    window.location.href = 'mailto:' + to +
+      '?subject=' + encodeURIComponent(s) +
+      '&body=' + encodeURIComponent(b);
+  }
+</script>
+</body>
+</html>
