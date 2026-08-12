@@ -3,3 +3,7 @@
 @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-nav{display:none}.article-body{max-width:790px;margin-inline:auto}.related-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.content-hero{padding-top:60px}.content-lead{font-size:17px}.article-body{padding:27px 20px}.article-body p,.article-body li,.article-body dd{font-size:16px}.fact-list>div{grid-template-columns:1fr;gap:6px}.comparison{display:block;overflow-x:auto}.related-grid{grid-template-columns:1fr}.inline-cta{padding:22px 18px}}
 .article-layout,.article-body{min-width:0}.article-body{width:100%}
+.inline-cta .store-row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0}
+.article-body .store-badge{min-width:185px;color:#fff;text-decoration:none}
+.article-body .store-badge .store-copy strong{color:#fff}
+@media(max-width:600px){.inline-cta .store-row{display:grid}.article-body .store-badge{width:100%}}

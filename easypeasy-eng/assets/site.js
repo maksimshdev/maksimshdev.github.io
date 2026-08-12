@@ -21,6 +21,27 @@
   setTheme(initial);
   toggle?.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
 
+  // Keep short Russian prepositions and conjunctions with the following word.
+  const typographyPattern = /(^|[\s([{«„"'])((?:а|без|в|во|да|для|до|за|и|из|или|к|ко|на|над|не|ни|но|о|об|от|по|под|при|про|с|со|у))[ \t\r\n]+(?=[\p{L}\p{N}])/giu;
+  const typographyWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      const parent = node.parentElement;
+      if (!parent || parent.closest('script, style, code, pre, textarea, noscript')) return NodeFilter.FILTER_REJECT;
+      return node.nodeValue?.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }
+  });
+  const typographyNodes = [];
+  while (typographyWalker.nextNode()) typographyNodes.push(typographyWalker.currentNode);
+  typographyNodes.forEach((node) => {
+    let value = node.nodeValue;
+    let previous;
+    do {
+      previous = value;
+      value = value.replace(typographyPattern, '$1$2\u00a0');
+    } while (value !== previous);
+    node.nodeValue = value;
+  });
+
   document.querySelectorAll('[data-store]').forEach((link) => {
     link.addEventListener('click', () => {
       const store = link.dataset.store;
