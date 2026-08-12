@@ -11,6 +11,9 @@
     document.querySelectorAll('[data-light-src][data-dark-src]').forEach((image) => {
       image.src = theme === 'dark' ? image.dataset.darkSrc : image.dataset.lightSrc;
     });
+    document.querySelectorAll('[data-light-href][data-dark-href]').forEach((link) => {
+      link.href = theme === 'dark' ? link.dataset.darkHref : link.dataset.lightHref;
+    });
     if (toggle) {
       toggle.textContent = theme === 'dark' ? '☀' : '☾';
       toggle.setAttribute('aria-label', theme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему');
@@ -50,15 +53,16 @@
   });
 
   if (location.hostname === 'maksimshdev.github.io') {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://mc.yandex.ru/metrika/tag.js';
-    script.addEventListener('load', () => {
-      window.ym?.(111174454, 'init', {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
-      if (new URLSearchParams(location.search).get('utm_source') === 'threads') {
-        window.ym?.(111174454, 'reachGoal', 'threads_landing_view');
-      }
-    });
-    document.head.appendChild(script);
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111174454', 'ym');
+
+    ym(111174454, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    if (new URLSearchParams(location.search).get('utm_source') === 'threads') {
+      ym(111174454, 'reachGoal', 'threads_landing_view');
+    }
   }
 })();
