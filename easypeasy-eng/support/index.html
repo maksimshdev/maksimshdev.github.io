@@ -1,139 +1,29 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="ru" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Служба поддержки — Изи Пизи Инглиш</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111174454', 'ym');
-
-    ym(111174454, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/111174454" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<style>
-  :root{
-    --grad-1:#C9A8E0; --grad-2:#8FB8C9; --grad-3:#4FC0A8;
-    --card-bg:rgba(255,255,255,0.72);
-    --card-border:rgba(255,255,255,0.55);
-    --text:#2B2740; --muted:#5A5470; --accent:#7C6CE0; --link:#6A5ACD;
-    --row-bg:rgba(255,255,255,0.45);
-    --field-bg:rgba(255,255,255,0.60);
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --grad-1:#3A2F52; --grad-2:#2A3A46; --grad-3:#1F3A33;
-      --card-bg:rgba(28,26,40,0.72);
-      --card-border:rgba(255,255,255,0.10);
-      --text:#ECE9F5; --muted:#A9A3BE; --accent:#9B8CF0; --link:#9B8CF0;
-      --row-bg:rgba(255,255,255,0.06);
-      --field-bg:rgba(255,255,255,0.08);
-    }
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0; min-height:100vh; padding:40px 18px;
-    font-family:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-    color:var(--text); line-height:1.62; font-size:16px;
-    background:linear-gradient(135deg,var(--grad-1) 0%,var(--grad-2) 50%,var(--grad-3) 100%);
-    background-attachment:fixed;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .wrap{max-width:620px; width:100%; margin:0 auto;}
-  .card{
-    background:var(--card-bg); border:1px solid var(--card-border);
-    border-radius:24px; padding:38px 34px; backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px); box-shadow:0 12px 40px rgba(43,39,64,0.14);
-  }
-  h1{font-weight:800; font-size:26px; line-height:1.25; margin:0 0 6px;}
-  .lead{font-size:16px; color:var(--muted); margin:0 0 24px;}
-  .mailrow{
-    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-    background:var(--row-bg); border:1px solid var(--card-border);
-    border-radius:16px; padding:16px 20px; margin:0 0 18px;
-  }
-  .mailrow .label{font-size:13px; color:var(--muted); margin:0 0 2px;}
-  .mailrow .addr{font-weight:700; font-size:17px; color:var(--accent); word-break:break-all;}
-  .mailrow .addr a{color:inherit; text-decoration:none;}
-  .btn{
-    display:inline-block; border:none; cursor:pointer;
-    font-family:inherit; font-weight:700; font-size:16px;
-    color:#fff; background:var(--accent);
-    border-radius:14px; padding:14px 22px; text-decoration:none;
-    transition:transform .15s, opacity .15s; text-align:center;
-  }
-  .btn:hover{transform:translateY(-2px); opacity:.94;}
-  .btn-block{display:block; width:100%; margin:0 0 26px;}
-  .form-title{font-weight:700; font-size:17px; margin:2px 0 4px;}
-  .form-hint{font-size:13px; color:var(--muted); margin:0 0 14px;}
-  label{display:block; font-size:13px; color:var(--muted); margin:0 0 6px;}
-  input,textarea{
-    width:100%; font-family:inherit; font-size:15px; color:var(--text);
-    background:var(--field-bg); border:1px solid var(--card-border);
-    border-radius:12px; padding:12px 14px; margin:0 0 14px; resize:vertical;
-  }
-  input:focus,textarea:focus{outline:none; border-color:var(--accent);}
-  textarea{min-height:120px;}
-  .links{margin-top:26px; display:flex; gap:18px; flex-wrap:wrap;}
-  .links a{color:var(--link); text-decoration:none; font-size:14px;}
-  .links a:hover{text-decoration:underline;}
-  .foot{color:var(--muted); font-size:13px; margin-top:22px;}
-</style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eeeae2">
+  <title>Служба поддержки — Изи Пизи Инглиш</title><meta name="description" content="Поддержка приложения Изи Пизи Инглиш: сообщите о проблеме, ошибке в карточке или предложите улучшение.">
+  <link rel="canonical" href="https://maksimshdev.github.io/easypeasy-eng/support/"><link rel="icon" href="../assets/app-icon.png"><link rel="stylesheet" href="../assets/site.css?v=20260812-3"><link rel="stylesheet" href="../assets/legal.css?v=20260812-3">
 </head>
-<body>
-<div class="wrap">
-<div class="card">
-<h1>Служба поддержки</h1>
-<p class="lead">По любым вопросам, проблемам и предложениям по приложению «Изи Пизи Инглиш» — напишите нам. Мы отвечаем на русском языке.</p>
-
-<div class="mailrow">
-  <div>
-    <p class="label">Почта поддержки</p>
-    <p class="addr"><a href="mailto:easy.peasy.msh@gmail.com">easy.peasy.msh@gmail.com</a></p>
-  </div>
-</div>
-
-<a class="btn btn-block" href="mailto:easy.peasy.msh@gmail.com?subject=%D0%98%D0%B7%D0%B8%20%D0%9F%D0%B8%D0%B7%D0%B8%20%D0%98%D0%BD%D0%B3%D0%BB%D0%B8%D1%88%20%E2%80%94%20%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D1%83">Написать письмо в Изи Пизи Инглиш</a>
-
-<p class="form-title">Или заполните форму</p>
-<p class="form-hint">Кнопка ниже откроет ваш почтовый клиент с уже заполненным письмом — останется только нажать «Отправить».</p>
-
-<label for="subj">Тема</label>
-<input id="subj" type="text" placeholder="Коротко о вопросе" value="Обращение в поддержку">
-
-<label for="msg">Сообщение</label>
-<textarea id="msg" placeholder="Опишите вопрос или проблему как можно подробнее"></textarea>
-
-<button class="btn btn-block" type="button" onclick="sendMail()">Отправить письмо</button>
-
-<div class="links">
-  <a href="https://maksimshdev.github.io/easypeasy-eng/">На главную</a>
-  <a href="https://maksimshdev.github.io/easypeasy-eng/terms/">Оферта</a>
-  <a href="https://maksimshdev.github.io/easypeasy-eng/privacy/">Политика конфиденциальности</a>
-</div>
-
-<p class="foot">© 2026 · Изи Пизи Инглиш · Maksim Shalotenko</p>
-</div>
-</div>
-
-<script>
-  function sendMail(){
-    var to = 'easy.peasy.msh@gmail.com';
-    var s = document.getElementById('subj').value.trim() || 'Обращение в поддержку';
-    var b = document.getElementById('msg').value;
-    window.location.href = 'mailto:' + to +
-      '?subject=' + encodeURIComponent(s) +
-      '&body=' + encodeURIComponent(b);
-  }
-</script>
-</body>
-</html>
+<body class="legal-page">
+  <a class="skip-link" href="#content">К содержанию</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../"><img src="../assets/app-icon.png" alt=""><span><span>Изи Пизи</span> Инглиш</span></a><nav class="main-nav" aria-label="Навигация"><a href="../#why">О приложении</a><a href="../privacy/">Конфиденциальность</a><a href="../terms/">Оферта</a></nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Включить тёмную тему">☾</button></div></header>
+  <main id="content">
+    <section class="legal-hero shell"><a class="back-link" href="../">← На главную</a><div class="kicker">Мы на связи</div><h1>Служба поддержки</h1><p class="legal-lead">Напишите нам о проблеме, неточности в карточке или идее для приложения. Поддержка отвечает на русском языке.</p></section>
+    <div class="document-layout shell"><aside class="document-nav"><strong>Полезные ссылки</strong><a href="../delete-account/">Удалить аккаунт</a><a href="../privacy/">Политика конфиденциальности</a><a href="../terms/">Условия использования</a></aside>
+      <article class="document">
+        <h2>Почта поддержки</h2>
+        <div class="support-box"><div class="icon" aria-hidden="true">✉</div><p><strong><a href="mailto:easy.peasy.msh@gmail.com">easy.peasy.msh@gmail.com</a></strong><br>Можно написать напрямую или заполнить форму ниже.</p></div>
+        <h2>Подготовить письмо</h2><p>Кнопка откроет установленный почтовый клиент. Сайт не отправляет и не сохраняет введённый текст сам.</p>
+        <form class="support-form" id="support-form">
+          <label class="field"><span>Тема обращения</span><input name="subject" autocomplete="off" maxlength="120" placeholder="Например: ошибка в карточке"></label>
+          <label class="field"><span>Сообщение</span><textarea name="message" maxlength="5000" placeholder="Опишите, что произошло. Для ошибки укажите слово или название колоды."></textarea></label>
+          <button class="primary-button" type="submit">Открыть письмо</button>
+        </form>
+        <div class="callout"><p><strong>Для технической проблемы</strong> полезно указать устройство, версию iOS или Android и последовательность действий. Не отправляйте пароль или платёжные данные.</p></div>
+      </article>
+    </div>
+  </main>
+  <footer><div class="footer-inner shell"><span>© 2026 · Изи Пизи Инглиш · Maksim Shalotenko</span><div class="footer-links"><a href="../privacy/">Конфиденциальность</a><a href="../terms/">Оферта</a><a href="../delete-account/">Удалить аккаунт</a></div></div></footer>
+  <script src="../assets/site.js?v=20260812-3"></script><script>document.querySelector('#support-form').addEventListener('submit',event=>{event.preventDefault();const data=new FormData(event.currentTarget);const subject=String(data.get('subject')||'Обращение в поддержку Изи Пизи Инглиш').trim();const message=String(data.get('message')||'').trim();location.href=`mailto:easy.peasy.msh@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`})</script>
+</body></html>

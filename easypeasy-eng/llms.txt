@@ -1,0 +1,43 @@
+# Изи Пизи Инглиш
+
+> Официальный русскоязычный сайт мобильного приложения для повторения английских слов и фраз с карточками и алгоритмом FSRS.
+
+## Проверяемые факты
+
+- Название: Изи Пизи Инглиш.
+- Назначение: тренажёр английской лексики для русскоязычных пользователей.
+- Метод: активное вспоминание и интервальные повторения FSRS.
+- Платформы: iOS и Android.
+- Контент: 57 готовых колод, 1 974 карточки, 11 категорий.
+- Направления: английский → русский и русский → английский с отдельным прогрессом.
+- Офлайн: после входа доступны обучение, колоды и прогресс; сеть нужна для входа и синхронизации.
+- Пользователь может создавать свои карточки и редактировать готовые для себя.
+- Продукт не позиционируется как полная замена курсу, преподавателю или разговорной практике.
+- Разработчик: Maksim Shalotenko.
+- Контакт: easy.peasy.msh@gmail.com.
+
+## Канонические страницы
+
+- [Продукт](https://maksimshdev.github.io/easypeasy-eng/)
+- [Официальная карточка продукта](https://maksimshdev.github.io/easypeasy-eng/about/)
+- [Вопросы и ответы](https://maksimshdev.github.io/easypeasy-eng/faq/)
+- [Что такое FSRS](https://maksimshdev.github.io/easypeasy-eng/method/fsrs/)
+- [Как запоминать английские слова](https://maksimshdev.github.io/easypeasy-eng/guides/how-to-remember-english-words/)
+- [Как учить разговорные фразы](https://maksimshdev.github.io/easypeasy-eng/guides/spoken-english-phrases/)
+- [Фразовые глаголы по темам](https://maksimshdev.github.io/easypeasy-eng/decks/phrasal-verbs/)
+- [Изи Пизи и Duolingo](https://maksimshdev.github.io/easypeasy-eng/compare/duolingo-for-vocabulary/)
+- [Изи Пизи и Anki](https://maksimshdev.github.io/easypeasy-eng/compare/anki-for-english/)
+
+## Доверие и обслуживание
+
+- [Служба поддержки](https://maksimshdev.github.io/easypeasy-eng/support/)
+- [Политика конфиденциальности](https://maksimshdev.github.io/easypeasy-eng/privacy/)
+- [Условия использования](https://maksimshdev.github.io/easypeasy-eng/terms/)
+- [Удаление аккаунта](https://maksimshdev.github.io/easypeasy-eng/delete-account/)
+
+## Магазины
+
+- [App Store](https://apps.apple.com/app/id6790266110)
+- [Google Play](https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish)
+
+Последнее обновление: 2026-08-12.

@@ -1,96 +1,127 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="ru" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Изи Пизи Инглиш</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111174454', 'ym');
-
-    ym(111174454, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/111174454" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<style>
-  :root{
-    --grad-1:#C9A8E0; --grad-2:#8FB8C9; --grad-3:#4FC0A8;
-    --card-bg:rgba(255,255,255,0.72);
-    --card-border:rgba(255,255,255,0.55);
-    --text:#2B2740; --muted:#5A5470; --accent:#7C6CE0; --link:#6A5ACD;
-    --row-bg:rgba(255,255,255,0.45);
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --grad-1:#3A2F52; --grad-2:#2A3A46; --grad-3:#1F3A33;
-      --card-bg:rgba(28,26,40,0.72);
-      --card-border:rgba(255,255,255,0.10);
-      --text:#ECE9F5; --muted:#A9A3BE; --accent:#9B8CF0; --link:#9B8CF0;
-      --row-bg:rgba(255,255,255,0.06);
-    }
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0; min-height:100vh; padding:40px 18px;
-    font-family:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-    color:var(--text); line-height:1.62; font-size:16px;
-    background:linear-gradient(135deg,var(--grad-1) 0%,var(--grad-2) 50%,var(--grad-3) 100%);
-    background-attachment:fixed;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .wrap{max-width:620px; width:100%; margin:0 auto;}
-  .card{
-    background:var(--card-bg); border:1px solid var(--card-border);
-    border-radius:24px; padding:38px 34px; backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px); box-shadow:0 12px 40px rgba(43,39,64,0.14);
-  }
-  h1{font-weight:800; font-size:26px; line-height:1.25; margin:0 0 6px;}
-  .lead{font-size:16px; color:var(--muted); margin:0 0 24px;}
-  .rows{display:flex; flex-direction:column; gap:12px;}
-  .row{
-    display:block; background:var(--row-bg); border:1px solid var(--card-border);
-    border-radius:16px; padding:18px 20px; text-decoration:none; color:var(--text);
-    transition:transform .15s, border-color .15s;
-  }
-  .row:hover{transform:translateY(-2px); border-color:var(--accent);}
-  .row .name{font-weight:700; font-size:18px; color:var(--accent); margin:0 0 2px;}
-  .row .desc{font-size:14px; color:var(--muted); margin:0;}
-  .foot{color:var(--muted); font-size:13px; margin-top:26px;}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#eeeae2">
+  <title>Изи Пизи Инглиш — запоминать английские слова и фразы</title>
+  <meta name="description" content="Изи Пизи Инглиш собирает короткое занятие на сегодня: 57 готовых колод, 1 974 английских слова и фразы, повторения по FSRS и работа офлайн.">
+  <link rel="canonical" href="https://maksimshdev.github.io/easypeasy-eng/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Изи Пизи Инглиш — слова, которые возвращаются вовремя">
+  <meta property="og:description" content="Готовые колоды и личная очередь повторений для живого английского.">
+  <meta property="og:url" content="https://maksimshdev.github.io/easypeasy-eng/">
+  <meta property="og:image" content="https://maksimshdev.github.io/easypeasy-eng/assets/app-icon.png">
+  <link rel="icon" href="./assets/app-icon.png">
+  <link rel="stylesheet" href="./assets/site.css?v=20260812-6">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://maksimshdev.github.io/easypeasy-eng/#organization","name":"Изи Пизи Инглиш","url":"https://maksimshdev.github.io/easypeasy-eng/","email":"easy.peasy.msh@gmail.com","founder":{"@type":"Person","name":"Maksim Shalotenko"}},{"@type":"WebSite","@id":"https://maksimshdev.github.io/easypeasy-eng/#website","url":"https://maksimshdev.github.io/easypeasy-eng/","name":"Изи Пизи Инглиш","inLanguage":"ru-RU","publisher":{"@id":"https://maksimshdev.github.io/easypeasy-eng/#organization"}},{"@type":"SoftwareApplication","@id":"https://maksimshdev.github.io/easypeasy-eng/#app","name":"Изи Пизи Инглиш","applicationCategory":"EducationalApplication","operatingSystem":"iOS, Android","description":"Приложение для повторения английских слов и фраз по алгоритму FSRS.","url":"https://maksimshdev.github.io/easypeasy-eng/","image":"https://maksimshdev.github.io/easypeasy-eng/assets/app-icon.png","publisher":{"@id":"https://maksimshdev.github.io/easypeasy-eng/#organization"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Бесплатная загрузка; условия покупок показываются в приложении и магазине до оплаты."},"downloadUrl":["https://apps.apple.com/app/id6790266110","https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Можно ли учиться без интернета?","acceptedAnswer":{"@type":"Answer","text":"После входа обучение, готовые колоды и прогресс доступны офлайн. Подключение требуется для входа и синхронизации."}},{"@type":"Question","name":"Что такое FSRS?","acceptedAnswer":{"@type":"Answer","text":"FSRS — алгоритм интервальных повторений, который планирует следующую встречу с карточкой по истории ваших ответов."}},{"@type":"Question","name":"Можно ли добавлять свои слова?","acceptedAnswer":{"@type":"Answer","text":"Да. Можно создавать собственные карточки и редактировать готовые карточки для себя."}},{"@type":"Question","name":"Заменяет ли приложение курс английского?","acceptedAnswer":{"@type":"Answer","text":"Нет. Это тренажёр слов и выражений, а не замена преподавателю, разговорной практике или полноценному курсу."}}]}</script>
 </head>
 <body>
-<div class="wrap">
-<div class="card">
-<h1>Изи Пизи Инглиш</h1>
-<p class="lead">Скоро здесь будет всё о приложении: колоды, возможности, скриншоты и ссылка на установку. А пока — правовые страницы и поддержка.</p>
-<div class="rows">
-  <a class="row" href="https://maksimshdev.github.io/easypeasy-eng/terms/">
-    <p class="name">Оферта</p>
-    <p class="desc">Условия использования приложения «Изи Пизи Инглиш».</p>
-  </a>
-  <a class="row" href="https://maksimshdev.github.io/easypeasy-eng/privacy/">
-    <p class="name">Политика конфиденциальности</p>
-    <p class="desc">Какие данные обрабатывает приложение и как ими управлять.</p>
-  </a>
-  <a class="row" href="https://maksimshdev.github.io/easypeasy-eng/delete-account/">
-    <p class="name">Удаление аккаунта</p>
-    <p class="desc">Как удалить аккаунт и все связанные с ним данные.</p>
-  </a>
-  <a class="row" href="https://maksimshdev.github.io/easypeasy-eng/support/">
-    <p class="name">Служба поддержки</p>
-    <p class="desc">Вопросы, проблемы и обратная связь — напишите нам.</p>
-  </a>
-</div>
-<p class="foot">© 2026 Изи Пизи Инглиш · Maksim Shalotenko</p>
-</div>
-</div>
+  <a class="skip-link" href="#content">К содержанию</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Изи Пизи Инглиш — на главную"><img src="./assets/app-icon.png" alt=""><span><span>Изи Пизи</span> Инглиш</span></a>
+      <nav class="main-nav" aria-label="Основная навигация"><a href="#how">Как работает</a><a href="#inside">Что внутри</a><a href="#learn">Материалы</a><a href="#faq">Вопросы</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Включить тёмную тему">☾</button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="sales-hero shell" id="top">
+      <div class="sales-copy">
+        <div class="eyebrow">Английский без бесконечной зубрёжки</div>
+        <h1>Запоминайте фразы <em>надолго.</em></h1>
+        <p class="sales-lead">Готовые темы помогают начать сразу, а FSRS сам собирает короткое занятие из слов и выражений, которые пора повторить сегодня.</p>
+        <div class="store-row">
+          <a class="store-badge" href="https://apps.apple.com/app/id6790266110" target="_blank" rel="noopener noreferrer" data-store="app_store" aria-label="Загрузить Изи Пизи Инглиш в App Store"><span class="store-icon" aria-hidden="true"></span><span class="store-copy"><small>Загрузите в</small><strong>App Store</strong></span></a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish" target="_blank" rel="noopener noreferrer" data-store="google_play" aria-label="Скачать Изи Пизи Инглиш в Google Play"><span class="play-icon" aria-hidden="true"></span><span class="store-copy"><small>Доступно в</small><strong>Google Play</strong></span></a>
+        </div>
+        <div class="hero-facts" aria-label="Состав приложения"><div><strong>57</strong><span>готовых колод</span></div><div><strong>1 974</strong><span>слова и фразы</span></div><div><strong>2</strong><span>направления</span></div></div>
+      </div>
+      <div class="product-showcase">
+        <div class="showcase-backdrop" aria-hidden="true"></div>
+        <figure class="showcase-phone"><img src="./assets/screen-home-ios-quick-light.png" data-light-src="./assets/screen-home-ios-quick-light.png" data-dark-src="./assets/screen-home-ios-quick-dark.png" alt="Главный экран Изи Пизи Инглиш на iPhone: семиминутное занятие на сегодня и продолжение выбранных тем" width="736" height="1600"></figure>
+      </div>
+    </section>
+
+    <section class="proof-band" aria-label="Ключевые свойства приложения"><div class="shell proof-band-inner"><div><span>01</span><p><strong>Начать сразу</strong> — готовые темы уже внутри.</p></div><div><span>02</span><p><strong>Повторять вовремя</strong> — очередь считает FSRS.</p></div><div><span>03</span><p><strong>Учиться где угодно</strong> — после входа работает офлайн.</p></div></div></section>
+
+    <section class="landing-section shell" id="how">
+      <div class="split-head"><div><div class="kicker">Понятный цикл</div><h2>Три действия. Никакой возни с расписанием.</h2></div><p>Вы выбираете нужные темы, пытаетесь вспомнить ответ и честно оцениваете результат. Всё остальное приложение делает само.</p></div>
+
+      <article class="journey-row">
+        <div class="journey-copy"><span class="step-label">Шаг 1</span><div class="kicker">Выберите полезное</div><h3>Не пустой экран, а 57 готовых колод.</h3><p>Разговорные фразы, работа, поездки, отношения, времена и фразовые глаголы уже разложены по понятным темам. Свои карточки можно держать рядом.</p><ul class="check-list"><li>видно время занятия до старта</li><li>видно количество новых и повторяемых карточек</li><li>готовые карточки можно редактировать под себя</li></ul></div>
+        <div class="journey-visual journey-visual--pink"><figure class="journey-phone"><img loading="lazy" decoding="async" src="./assets/screen-decks-ios-light.png" data-light-src="./assets/screen-decks-ios-light.png" data-dark-src="./assets/screen-decks-ios-dark.png" alt="Список колод темы Путешествия и переезд на iPhone с актуальными кнопками редактирования" width="736" height="1600"></figure><p>Тема «Путешествия и переезд»</p></div>
+      </article>
+
+      <article class="journey-row journey-row--reverse">
+        <div class="journey-copy"><span class="step-label">Шаг 2</span><div class="kicker">Вспомните до подсказки</div><h3>Одна карточка. Один честный ответ.</h3><p>Сначала попробуйте вспомнить перевод. Затем откройте оборот и выберите, насколько легко дался ответ. Это не экзамен — это сигнал для следующего интервала.</p><div class="rating-legend" aria-label="Варианты оценки"><span class="rating-again">Ещё раз</span><span class="rating-hard">Тяжко</span><span class="rating-good">Нормик</span><span class="rating-easy">Изи пизи</span></div></div>
+        <div class="journey-visual journey-visual--yellow"><figure class="journey-phone"><img loading="lazy" decoding="async" src="./assets/screen-study-ios-light.png" data-light-src="./assets/screen-study-ios-light.png" data-dark-src="./assets/screen-study-ios-dark.png" alt="Карточка Пространство для ног с переводом Leg room и четырьмя вариантами оценки на iPhone" width="736" height="1600"></figure><p>Карточка после ответа</p></div>
+      </article>
+
+      <article class="journey-row">
+        <div class="journey-copy"><span class="step-label">Шаг 3</span><div class="kicker">Продолжайте спокойно</div><h3>Прогресс отвечает на вопрос «что дальше?»</h3><p>Сколько фраз уже в памяти, сколько пора повторить сейчас и какой объём ожидается на неделе — всё видно на одном экране.</p><a class="text-link" href="./method/fsrs/">Понятно разобраться с FSRS →</a></div>
+        <div class="journey-visual journey-visual--green"><figure class="journey-phone"><img loading="lazy" decoding="async" src="./assets/screen-progress-ios-light.png" data-light-src="./assets/screen-progress-ios-light.png" data-dark-src="./assets/screen-progress-ios-dark.png" alt="Экран прогресса на iPhone с очередью повторений, недельной целью и календарём" width="736" height="1600"></figure><p>Личная очередь и цель недели</p></div>
+      </article>
+    </section>
+
+    <section class="landing-section shell" id="inside">
+      <div class="split-head"><div><div class="kicker">Что внутри</div><h2>Всё нужное для ежедневной лексики.</h2></div><p>Без выдуманной магии и обещаний свободного английского за неделю. Только инструменты, которые помогают регулярно возвращать слова в память.</p></div>
+      <div class="capability-grid">
+        <article class="capability-card capability-card--accent"><div class="capability-mark capability-mark--wide">FSRS</div><h3>Личная очередь повторений</h3><p>Карточки возвращаются по истории ваших ответов, а не по одинаковому календарю для всех.</p><a href="./method/fsrs/">Как это работает →</a></article>
+        <article class="capability-card"><div class="capability-mark">↔</div><h3>EN → RU и RU → EN</h3><p>Понимание готовой фразы и самостоятельное вспоминание тренируются отдельно.</p></article>
+        <article class="capability-card"><div class="capability-mark capability-mark--wide">OFF</div><h3>Работа офлайн</h3><p>После входа обучение, колоды и прогресс доступны без подключения к сети.</p></article>
+        <article class="capability-card"><div class="capability-mark">＋</div><h3>Свои карточки</h3><p>Добавляйте личные выражения и редактируйте готовые карточки для себя.</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section shell">
+      <div class="fit-panel">
+        <div class="fit-copy"><div class="kicker">Честное позиционирование</div><h2>Тренажёр лексики, а не обещание чуда.</h2><p>Изи Пизи Инглиш помогает удерживать нужные слова и выражения. Лучше всего оно работает рядом с чтением, аудированием, курсом или живым общением.</p></div>
+        <div class="fit-columns"><div class="fit-card fit-card--yes"><h3>Подойдёт, если вы хотите</h3><ul><li>учить слова из реальной жизни;</li><li>начать с готовых русскоязычных колод;</li><li>заниматься короткими сессиями;</li><li>не настраивать алгоритм вручную.</li></ul></div><div class="fit-card"><h3>Не пытается заменить</h3><ul><li>полный курс грамматики;</li><li>разговор с преподавателем;</li><li>практику произношения с людьми;</li><li>системную работу со всеми навыками.</li></ul></div></div>
+      </div>
+    </section>
+
+    <section class="landing-section shell" id="learn">
+      <div class="split-head"><div><div class="kicker">Материалы</div><h2>Разобраться до установки.</h2></div><p>Практические ответы о запоминании слов, разговорных фразах и выборе подходящего инструмента.</p></div>
+      <div class="resource-grid">
+        <a class="resource-card resource-card--lead" href="./guides/how-to-remember-english-words/"><span>Руководство</span><h3>Как запоминать английские слова надолго</h3><p>Шесть шагов: от контекста до интервальных повторений.</p><b>Читать →</b></a>
+        <a class="resource-card" href="./guides/spoken-english-phrases/"><span>Живой английский</span><h3>Как учить разговорные фразы</h3><p>Почему готовая реплика полезнее одного перевода.</p><b>Читать →</b></a>
+        <a class="resource-card" href="./decks/phrasal-verbs/"><span>Готовые колоды</span><h3>Фразовые глаголы по ситуациям</h3><p>Движение, быт, общение, работа и отдых.</p><b>Смотреть →</b></a>
+        <a class="resource-card" href="./compare/duolingo-for-vocabulary/"><span>Сравнение</span><h3>Изи Пизи и Duolingo</h3><p>Курс и личный словарь решают разные задачи.</p><b>Сравнить →</b></a>
+      </div>
+    </section>
+
+    <section class="landing-section shell" id="faq">
+      <div class="split-head"><div><div class="kicker">Короткие ответы</div><h2>Перед первой колодой.</h2></div><p>О методе, своих карточках, офлайн-режиме и границах приложения.</p></div>
+      <div class="faq">
+        <details><summary>Что такое FSRS?</summary><p>Это алгоритм интервальных повторений. Он учитывает историю оценок карточки и рассчитывает следующий момент повторения отдельно для каждого направления.</p></details>
+        <details><summary>Можно ли учиться без интернета?</summary><p>Да. После входа обучение, готовые колоды и прогресс доступны офлайн. Сеть нужна для входа и синхронизации.</p></details>
+        <details><summary>Можно ли добавлять свои слова?</summary><p>Да. Вы можете создавать собственные карточки и редактировать готовые карточки для себя.</p></details>
+        <details><summary>Приложение заменяет курс английского?</summary><p>Нет. Это тренажёр слов и выражений. Он дополняет курс, преподавателя, чтение и разговорную практику.</p></details>
+      </div>
+      <p class="faq-more"><a href="./faq/">Все вопросы об Изи Пизи Инглиш →</a></p>
+    </section>
+
+    <section class="landing-section shell" id="documents">
+      <div class="split-head"><div><div class="kicker">Поддержка и документы</div><h2>Всё важное открыто.</h2></div><p>Связаться с поддержкой, прочитать условия или удалить аккаунт можно без установки приложения.</p></div>
+      <div class="legal-grid">
+        <a class="legal-card" href="./support/"><div><h3>Служба поддержки</h3><p>Проблема, неточность в карточке или идея.</p></div><span class="legal-arrow">↗</span></a>
+        <a class="legal-card" href="./privacy/"><div><h3>Конфиденциальность</h3><p>Какие данные обрабатываются и зачем.</p></div><span class="legal-arrow">↗</span></a>
+        <a class="legal-card" href="./terms/"><div><h3>Условия использования</h3><p>Публичная оферта и правила приложения.</p></div><span class="legal-arrow">↗</span></a>
+        <a class="legal-card" href="./delete-account/"><div><h3>Удаление аккаунта</h3><p>Порядок удаления аккаунта и данных.</p></div><span class="legal-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="final-cta shell">
+      <div><div class="kicker">Начните с одной темы</div><h2>Сегодня — несколько фраз. Завтра они всё ещё с вами.</h2><p>Скачайте Изи Пизи Инглиш и откройте первую готовую колоду.</p></div>
+      <div class="store-row"><a class="store-badge" href="https://apps.apple.com/app/id6790266110" target="_blank" rel="noopener noreferrer" data-store="app_store"><span class="store-icon" aria-hidden="true"></span><span class="store-copy"><small>Загрузите в</small><strong>App Store</strong></span></a><a class="store-badge" href="https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish" target="_blank" rel="noopener noreferrer" data-store="google_play"><span class="play-icon" aria-hidden="true"></span><span class="store-copy"><small>Доступно в</small><strong>Google Play</strong></span></a></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-inner shell"><span>© 2026 · Изи Пизи Инглиш · Maksim Shalotenko</span><div class="footer-links"><a href="./about/">О продукте</a><a href="./support/">Поддержка</a><a href="./privacy/">Конфиденциальность</a><a href="./terms/">Оферта</a><a href="./delete-account/">Удалить аккаунт</a></div></div></footer>
+  <script src="./assets/site.js?v=20260812-6"></script>
 </body>
 </html>

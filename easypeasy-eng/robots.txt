@@ -1,0 +1,36 @@
+# Важно: для GitHub Pages project site этот файл нужно также разместить по
+# https://maksimshdev.github.io/robots.txt — robots.txt действует от корня хоста.
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: YandexAdditional
+Allow: /
+
+User-agent: YandexAdditionalBot
+Allow: /
+
+Sitemap: https://maksimshdev.github.io/easypeasy-eng/sitemap.xml
