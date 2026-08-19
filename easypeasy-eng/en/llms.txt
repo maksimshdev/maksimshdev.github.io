@@ -8,7 +8,10 @@
 - Purpose: English vocabulary practice for Russian-speaking learners.
 - Method: active recall and FSRS spaced repetition.
 - Platforms: iOS and Android.
-- Included content: 57 ready-made decks, 1,974 cards and 11 categories.
+- Included content: 74 visible ready-made decks built from 66 source content decks, with 2,281 unique cards across 11 categories.
+- The approved vNext-4 content update dated 19 August 2026 added 9 source decks and 307 unique cards; no existing deck or canonical card was removed.
+- New topics: Connectors for Confident Speech, Asking for Help and Keeping Your Cool, Slang and New Meanings, Rooms and Furniture, Garden and Yard, Bathroom and Personal Care, Airport and Railway Station Vocabulary, Interview Questions, and Reviews of Films, Books and Art.
+- The thematic and combined phrasal-verb decks contain 225 unique cards.
 - Directions: English to Russian and Russian to English, each with separate progress.
 - Offline: after sign-in, study sessions, decks and progress are available without a connection; sign-in and cross-device sync require the internet.
 - Users can create their own cards and edit ready-made cards for personal use.
@@ -25,6 +28,7 @@
 - [What is FSRS?](https://maksimshdev.github.io/easypeasy-eng/en/method/fsrs/)
 - [How to remember English words](https://maksimshdev.github.io/easypeasy-eng/en/guides/how-to-remember-english-words/)
 - [How to learn spoken English phrases](https://maksimshdev.github.io/easypeasy-eng/en/guides/spoken-english-phrases/)
+- [All ready-made decks](https://maksimshdev.github.io/easypeasy-eng/en/decks/)
 - [Phrasal verbs by topic](https://maksimshdev.github.io/easypeasy-eng/en/decks/phrasal-verbs/)
 - [Easy Peasy English and Duolingo](https://maksimshdev.github.io/easypeasy-eng/en/compare/duolingo-for-vocabulary/)
 - [Easy Peasy English and Anki](https://maksimshdev.github.io/easypeasy-eng/en/compare/anki-for-english/)

@@ -10,7 +10,10 @@ English-language reference: https://maksimshdev.github.io/easypeasy-eng/en/llms.
 - Назначение: тренажёр английской лексики для русскоязычных пользователей.
 - Метод: активное вспоминание и интервальные повторения FSRS.
 - Платформы: iOS и Android.
-- Контент: 57 готовых колод, 1 974 карточки, 11 категорий.
+- Контент: 74 видимые готовые колоды, собранные из 66 исходных контентных колод; 2 281 уникальная карточка и 11 категорий.
+- Обновление контента vNext-4 от 19 августа 2026 года добавило 9 исходных колод и 307 уникальных карточек; ни одна прежняя колода или карточка не удалена.
+- Новые темы: «Связки для уверенной речи», «Просьбы о помощи и самообладание», «Сленг и новые значения», «Комнаты и мебель», «Сад и участок», «Ванная и уход», «Аэропорт и вокзал: слова», «Вопросы на собеседовании», «Отзывы: фильмы, книги и искусство».
+- В тематических и объединённой колодах фразовых глаголов — 225 уникальных карточек.
 - Направления: английский → русский и русский → английский с отдельным прогрессом.
 - Офлайн: после входа доступны обучение, колоды и прогресс; сеть нужна для входа и синхронизации.
 - Пользователь может создавать свои карточки и редактировать готовые для себя.
@@ -26,6 +29,7 @@ English-language reference: https://maksimshdev.github.io/easypeasy-eng/en/llms.
 - [Что такое FSRS](https://maksimshdev.github.io/easypeasy-eng/method/fsrs/)
 - [Как запоминать английские слова](https://maksimshdev.github.io/easypeasy-eng/guides/how-to-remember-english-words/)
 - [Как учить разговорные фразы](https://maksimshdev.github.io/easypeasy-eng/guides/spoken-english-phrases/)
+- [Все готовые колоды](https://maksimshdev.github.io/easypeasy-eng/decks/)
 - [Фразовые глаголы по темам](https://maksimshdev.github.io/easypeasy-eng/decks/phrasal-verbs/)
 - [Изи Пизи и Duolingo](https://maksimshdev.github.io/easypeasy-eng/compare/duolingo-for-vocabulary/)
 - [Изи Пизи и Anki](https://maksimshdev.github.io/easypeasy-eng/compare/anki-for-english/)
