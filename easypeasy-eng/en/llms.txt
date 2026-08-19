@@ -1,0 +1,45 @@
+# Easy Peasy English
+
+> Official English-language reference for a Russian-language mobile app that helps Russian-speaking learners review English words and phrases with flashcards and FSRS scheduling.
+
+## Verifiable product facts
+
+- Product name: Easy Peasy English (Изи Пизи Инглиш in Russian).
+- Purpose: English vocabulary practice for Russian-speaking learners.
+- Method: active recall and FSRS spaced repetition.
+- Platforms: iOS and Android.
+- Included content: 57 ready-made decks, 1,974 cards and 11 categories.
+- Directions: English to Russian and Russian to English, each with separate progress.
+- Offline: after sign-in, study sessions, decks and progress are available without a connection; sign-in and cross-device sync require the internet.
+- Users can create their own cards and edit ready-made cards for personal use.
+- The product is not positioned as a complete replacement for a language course, teacher or conversation practice.
+- App interface and learning content are currently in Russian.
+- Developer: Maksim Shalotenko.
+- Contact: easy.peasy.msh@gmail.com.
+
+## Canonical English pages
+
+- [Product](https://maksimshdev.github.io/easypeasy-eng/en/)
+- [Official product facts](https://maksimshdev.github.io/easypeasy-eng/en/about/)
+- [Frequently asked questions](https://maksimshdev.github.io/easypeasy-eng/en/faq/)
+- [What is FSRS?](https://maksimshdev.github.io/easypeasy-eng/en/method/fsrs/)
+- [How to remember English words](https://maksimshdev.github.io/easypeasy-eng/en/guides/how-to-remember-english-words/)
+- [How to learn spoken English phrases](https://maksimshdev.github.io/easypeasy-eng/en/guides/spoken-english-phrases/)
+- [Phrasal verbs by topic](https://maksimshdev.github.io/easypeasy-eng/en/decks/phrasal-verbs/)
+- [Easy Peasy English and Duolingo](https://maksimshdev.github.io/easypeasy-eng/en/compare/duolingo-for-vocabulary/)
+- [Easy Peasy English and Anki](https://maksimshdev.github.io/easypeasy-eng/en/compare/anki-for-english/)
+
+## Trust and support
+
+- [Support](https://maksimshdev.github.io/easypeasy-eng/en/support/)
+- [Privacy Policy](https://maksimshdev.github.io/easypeasy-eng/en/privacy/)
+- [Terms of Use](https://maksimshdev.github.io/easypeasy-eng/en/terms/)
+- [Delete an account](https://maksimshdev.github.io/easypeasy-eng/en/delete-account/)
+- The Russian legal texts are authoritative; English translations are provided for convenience.
+
+## App stores
+
+- [App Store](https://apps.apple.com/app/id6790266110)
+- [Google Play](https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish)
+
+Last updated: 2026-08-19.

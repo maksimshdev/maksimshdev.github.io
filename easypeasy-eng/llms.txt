@@ -2,6 +2,8 @@
 
 > Официальный русскоязычный сайт мобильного приложения для повторения английских слов и фраз с карточками и алгоритмом FSRS.
 
+English-language reference: https://maksimshdev.github.io/easypeasy-eng/en/llms.txt
+
 ## Проверяемые факты
 
 - Название: Изи Пизи Инглиш.
@@ -40,4 +42,11 @@
 - [App Store](https://apps.apple.com/app/id6790266110)
 - [Google Play](https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish)
 
-Последнее обновление: 2026-08-12.
+## Английская версия сайта
+
+- [English home](https://maksimshdev.github.io/easypeasy-eng/en/)
+- [Product facts in English](https://maksimshdev.github.io/easypeasy-eng/en/about/)
+- [English FAQ](https://maksimshdev.github.io/easypeasy-eng/en/faq/)
+- [English guides and comparisons](https://maksimshdev.github.io/easypeasy-eng/en/guides/)
+
+Последнее обновление: 2026-08-19.

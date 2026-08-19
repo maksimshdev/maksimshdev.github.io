@@ -2,8 +2,26 @@
   const root = document.documentElement;
   const toggle = document.querySelector('[data-theme-toggle]');
   const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const isEnglish = root.lang.toLowerCase().startsWith('en');
   const saved = localStorage.getItem('epe-site-theme');
   const initial = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+  const headerInner = document.querySelector('.header-inner');
+  if (headerInner) {
+    const basePath = '/easypeasy-eng';
+    const currentPath = location.pathname.replace(/index\.html$/, '');
+    const targetPath = isEnglish
+      ? currentPath.replace(`${basePath}/en`, basePath)
+      : currentPath.replace(`${basePath}/`, `${basePath}/en/`);
+    const languageLink = document.createElement('a');
+    languageLink.className = 'language-switch';
+    languageLink.href = targetPath || `${basePath}/`;
+    languageLink.hreflang = isEnglish ? 'ru' : 'en';
+    languageLink.lang = isEnglish ? 'ru' : 'en';
+    languageLink.textContent = isEnglish ? 'RU' : 'EN';
+    languageLink.setAttribute('aria-label', isEnglish ? 'Открыть русскую версию' : 'Open the English version');
+    headerInner.insertBefore(languageLink, toggle || null);
+  }
 
   function setTheme(theme) {
     root.dataset.theme = theme;
@@ -16,7 +34,9 @@
     });
     if (toggle) {
       toggle.textContent = theme === 'dark' ? '☀' : '☾';
-      toggle.setAttribute('aria-label', theme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему');
+      toggle.setAttribute('aria-label', isEnglish
+        ? (theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme')
+        : (theme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему'));
     }
     if (themeMeta) themeMeta.content = theme === 'dark' ? '#2d2c31' : '#eeeae2';
   }
@@ -24,8 +44,10 @@
   setTheme(initial);
   toggle?.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
 
-  // Keep short Russian prepositions and conjunctions with the following word.
-  const typographyPattern = /(^|[\s([{«„"'])((?:а|без|в|во|да|для|до|за|и|из|или|к|ко|на|над|не|ни|но|о|об|от|по|под|при|про|с|со|у))[ \t\r\n]+(?=[\p{L}\p{N}])/giu;
+  // Keep short function words with the word that follows in both site languages.
+  const typographyPattern = isEnglish
+    ? /(^|[\s([{«„"'])((?:a|an|and|as|at|by|for|from|i|in|into|of|on|or|the|to|with))[ \t\r\n]+(?=[\p{L}\p{N}])/giu
+    : /(^|[\s([{«„"'])((?:а|без|в|во|да|для|до|за|и|из|или|к|ко|на|над|не|ни|но|о|об|от|по|под|при|про|с|со|у))[ \t\r\n]+(?=[\p{L}\p{N}])/giu;
   const typographyWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
       const parent = node.parentElement;
