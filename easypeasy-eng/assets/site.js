@@ -74,6 +74,12 @@
     });
   });
 
+  document.querySelectorAll('[data-social]').forEach((link) => {
+    link.addEventListener('click', () => {
+      window.ym?.(111174454, 'reachGoal', `${link.dataset.social}_click`);
+    });
+  });
+
   if (location.hostname === 'maksimshdev.github.io') {
     (function(m,e,t,r,i,k,a){
       m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
