@@ -7,7 +7,7 @@
 - Product name: Easy Peasy English (Изи Пизи Инглиш in Russian).
 - Purpose: English vocabulary practice for Russian-speaking learners.
 - Method: active recall and FSRS spaced repetition.
-- Platforms: iOS and Android.
+- Platforms: iPhone, iPad, Mac and Android.
 - Included content: 74 visible ready-made decks built from 66 source content decks, with 2,281 unique cards across 11 categories.
 - The approved vNext-4 content update dated 19 August 2026 added 9 source decks and 307 unique cards; no existing deck or canonical card was removed.
 - New topics: Connectors for Confident Speech, Asking for Help and Keeping Your Cool, Slang and New Meanings, Rooms and Furniture, Garden and Yard, Bathroom and Personal Care, Airport and Railway Station Vocabulary, Interview Questions, and Reviews of Films, Books and Art.
