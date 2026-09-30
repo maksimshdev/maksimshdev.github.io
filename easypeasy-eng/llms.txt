@@ -53,4 +53,4 @@ English-language reference: https://maksimshdev.github.io/easypeasy-eng/en/llms.
 - [English FAQ](https://maksimshdev.github.io/easypeasy-eng/en/faq/)
 - [English guides and comparisons](https://maksimshdev.github.io/easypeasy-eng/en/guides/)
 
-Последнее обновление: 2026-08-19.
+Последнее обновление: 2026-09-30.

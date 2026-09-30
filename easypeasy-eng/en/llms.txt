@@ -46,4 +46,4 @@
 - [App Store](https://apps.apple.com/app/id6790266110)
 - [Google Play](https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish)
 
-Last updated: 2026-08-19.
+Last updated: 2026-09-30.
