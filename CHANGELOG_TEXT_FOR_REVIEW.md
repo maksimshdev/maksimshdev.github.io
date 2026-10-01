@@ -18,7 +18,7 @@
 
 Переработанный раздел
 
-10 тематических колод и сводная колода «Все времена и глагольные конструкции» — 318 карточек.
+10 тематических колод и сводная колода «Все времена и глагольные конструкции» — 320 карточек.
 
 Новые темы
 
@@ -42,7 +42,7 @@ Tenses and verb patterns
 
 Reworked section
 
-10 thematic decks and the combined “All tenses and verb patterns” deck — 318 cards.
+10 thematic decks and the combined “All tenses and verb patterns” deck — 320 cards.
 
 New topics
 
