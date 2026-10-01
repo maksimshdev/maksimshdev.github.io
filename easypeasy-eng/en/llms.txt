@@ -8,10 +8,9 @@
 - Purpose: English vocabulary practice for Russian-speaking learners.
 - Method: active recall and FSRS spaced repetition.
 - Platforms: iPhone, iPad, Mac and Android.
-- Included content: 74 visible ready-made decks built from 66 source content decks, with 2,281 unique cards across 11 categories.
-- The approved vNext-4 content update dated 19 August 2026 added 9 source decks and 307 unique cards; no existing deck or canonical card was removed.
-- New topics: Connectors for Confident Speech, Asking for Help and Keeping Your Cool, Slang and New Meanings, Rooms and Furniture, Garden and Yard, Bathroom and Personal Care, Airport and Railway Station Vocabulary, Interview Questions, and Reviews of Films, Books and Art.
-- The thematic and combined phrasal-verb decks contain 225 unique cards.
+- Included content: 83 visible ready-made decks, with 2,620 unique cards across 12 categories. The decks comprise 69 source topic decks, 6 thematic phrasal-verb decks by situation and 8 combined decks: 5 by level, plus one each for phrasal verbs, tenses and verb patterns, and irregular verbs. Each card has exactly one home deck; cards in combined decks are not counted again in the total of 2,620.
+- The vnext-6 content update introduces “All words by Level”: 5 combined decks from A1 to C2. “Tenses and verb patterns” has been reworked. “Stationery” and “Words from phrasal verbs” have been added, and duplicates have been removed.
+- Six thematic phrasal-verb decks by situation contain 287 cards. “All phrasal verbs” contains 413 cards, including “Words from phrasal verbs”.
 - Directions: English to Russian and Russian to English, each with separate progress.
 - Offline: after sign-in, study sessions, decks and progress are available without a connection; sign-in and cross-device sync require the internet.
 - Users can create their own cards and edit ready-made cards for personal use.
@@ -46,4 +45,4 @@
 - [App Store](https://apps.apple.com/app/id6790266110)
 - [Google Play](https://play.google.com/store/apps/details?id=io.github.maksimshdev.easypeasyenglish)
 
-Last updated: 2026-09-30.
+Last updated: 2026-10-02.
